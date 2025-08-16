@@ -1,5 +1,7 @@
 
 import Link from "next/link";
+import Image from 'next/image';
+
 import { FaShippingFast, FaHeadset, FaUndo } from "react-icons/fa";
 export default function HomePage() {
   return (
@@ -13,7 +15,7 @@ export default function HomePage() {
         <div className="flex gap-6">
           <div className="flex-2">
             <div className="relative rounded-lg overflow-hidden bg-black h-[620px] w-[720px] ml-20">
-              <img
+              <Image
                 src="/images/speaker.png"
                 alt="PlayStation 5"
                 className=" object-cover brightness-75 pl-17 pt-20"
@@ -34,7 +36,7 @@ export default function HomePage() {
           <div className="flex-3 flex flex-col gap-4 ">
             <div>
               <div className="relative rounded-lg overflow-hidden  bg-black w-[720px] ">
-                <img
+                <Image
                   src="/images/woman.png"
                   alt="Women's Collections"
                   className=" object-cover brightness-75 ml-48 "
@@ -55,7 +57,7 @@ export default function HomePage() {
             </div>
             <div className="flex gap-4">
               <div className="relative rounded-lg overflow-hidden  bg-black h-[320px] w-[350]">
-                <img
+                <Image
                   src="/images/speakers.png"
                   alt="Speakers"
                   className=" pt-13 ml-16 brightness-80 w-60"
@@ -71,7 +73,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="relative rounded-lg bg-black overflow-hidden h-[320px] w-[350]">
-                <img
+                <Image
                   src="/images/shto.png"
                   alt="Perfume"
                   className=" brightness-70 ml-15 mt-10 w-60"

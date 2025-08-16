@@ -1,11 +1,11 @@
 "use client";
-import { useLanguage } from '../../shared-components/language/page';
+import { useLanguage } from '../../shared-components/language/languageProvider';
 import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 const SignIn = () => {
   const { t } = useLanguage();
-  const [name, setName] = useState('');
+  const [name] = useState('');
   const [emailPhone, setEmailPhone] = useState('');
   const [password, setPassword] = useState('');
   const handleSubmit = (e: React.FormEvent) => {

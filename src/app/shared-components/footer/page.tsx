@@ -1,4 +1,6 @@
 import React from "react";
+import Image from 'next/image';
+
 import { Poppins } from "next/font/google";
 const poppins = Poppins({
     subsets: ["latin"],
@@ -58,21 +60,21 @@ const Footer = () => {
                     <h3 className="font-semibold">Download App</h3>
                     <p className="text-[10px] mb-3">Save $3 with App New User Only</p>
                     <div className="flex space-x-3 mb-3">
-                        <img
+                        <Image
                             src="/images/Qr Code.png"
                             alt="QR code"
                             className="w-28 h-28 object-contain border border-white"
                         />
                         <div className="flex flex-col justify-between gap-2">
                             <a href="" className="">
-                                <img
+                                <Image
                                     src="/images/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png"
                                     alt="Google Play Store"
                                     className="w-40 object-contain"
                                 />
                             </a>
                             <a href="" className="">
-                                <img
+                                <Image
                                     src="/images/AppStore.png"
                                     alt="Apple App Store"
                                     className="w-40 object-contain"

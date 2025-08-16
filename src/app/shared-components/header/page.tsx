@@ -1,17 +1,14 @@
-
-
 "use client";
-import Link from 'next/link';
-import { useLanguage } from '../language/page';
-import { Search } from 'lucide-react';
-import { usePathname } from 'next/navigation'; 
+import Link from "next/link";
+import { useLanguage } from "../language/languageProvider";
+import { Search } from "lucide-react";
+import { usePathname } from "next/navigation"; 
 
 const Header = () => {
-  
   const { t, language, setLanguage } = useLanguage();
   const pathname = usePathname(); 
 
-  console.log('Header is rendering'); 
+  console.log("Header is rendering"); 
   return (
     <div className="fixed top-0 left-0 right-0 bg-white z-20 shadow-lg">
       <div className="bg-black text-white p-2 flex justify-between items-center">
@@ -21,7 +18,7 @@ const Header = () => {
         </Link>
         <select
           value={language}
-          onChange={(e) => setLanguage(e.target.value as any)}
+          onChange={(e) => setLanguage(e.target.value as "en" | "sw" | "fr")}
           className="mr-48 p-1 rounded bg-black text-white"
         >
           <option value="en">English</option>
@@ -32,48 +29,48 @@ const Header = () => {
       <header className="p-4 flex justify-between items-center w-full bg-white">
         <div className="p-4 flex justify-between items-center w-full">
           <Link href="/" className="font-bold text-xl text-black ml-15">
-            {t('logo')}
+            {t("logo")}
           </Link>
           <nav className="flex gap-15 pr-9">
             <Link
               href="/"
               className={`text-black text-lg hover:underline ${
-                pathname === '/' ? 'underline' : ''
+                pathname === "/" ? "underline" : ""
               }`}
             >
-              {t('home')}
+              {t("home")}
             </Link>
             <Link
               href="/contact-us"
               className={`text-black text-lg hover:underline ${
-                pathname === '/contact-us' ? 'underline' : ''
+                pathname === "/contact-us" ? "underline" : ""
               }`}
             >
-              {t('contact')}
+              {t("contact")}
             </Link>
             <Link
               href="/about"
               className={`text-black text-lg hover:underline ${
-                pathname === '/about' ? 'underline' : ''
+                pathname === "/about" ? "underline" : ""
               }`}
             >
-              {t('about')}
+              {t("about")}
             </Link>
             <Link
               href="authentication/signUp"
               className={`text-black text-lg ${
-                pathname === '/authentication/signUp' ? 'underline' : ''
+                pathname === "/authentication/signUp" ? "underline" : ""
               }`}
             >
-              {t('signup')}
+              {t("signup")}
             </Link>
           </nav>
           <div className="relative">
             <input
               type="text"
-              placeholder={t('searchPlaceholder')}
+              placeholder={t("searchPlaceholder")}
               className="mr-34 pr-8 p-2 w-69 border border-gray-200 rounded"
-              style={{ color: '#000000' }}
+              style={{ color: "#000000" }}
             />
             <Search
               size={20}

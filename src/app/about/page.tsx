@@ -2,6 +2,8 @@
 
 import { FaShippingFast, FaHeadset, FaUndo, FaFacebookF, FaTwitter, FaInstagram, FaUsers, FaMoneyBillWave, FaUserFriends, FaChartLine } from "react-icons/fa";
 import Link from "next/link";
+import Image from 'next/image';
+
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
           </p>
         </div>
         <div className="w-full md:w-1/2 p-4 flex justify-center">
-          <img
+          <Image
             src="/images/portrait-two-african-females-holding-shopping-bags-while-reacting-something-their-smartphone 1 (1).png"
             alt="Shopping Image"
             className="w-3/5 h-auto"
@@ -60,7 +62,7 @@ export default function Home() {
 
       <section className="flex flex-col md:flex-row justify-around items-center mt-20 p-4">
         <div className="text-center mb-4 md:mb-0">
-          <img
+          <Image
             src="/images/Frame 874.png"
             alt="Tom Cruise"
             className="w-70 h-70 rounded-full mx-auto mb-2"
@@ -80,7 +82,7 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center mb-4 md:mb-0">
-          <img
+          <Image
             src="/images/Frame 875.png"
             alt="Emma Watson"
             className="w-70 h-70 rounded-full mx-auto mb-2"
@@ -100,7 +102,7 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center">
-          <img
+          <Image
             src="/images/Frame 876.png"
             alt="Will Smith"
             className="w-70 h-70 rounded-full mx-auto mb-2"
